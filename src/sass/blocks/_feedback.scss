@@ -1,0 +1,39 @@
+.feedback {
+    padding-bottom: 71px;
+    &__list {
+        margin: 70px 0 0 0;
+        padding: 0;
+        list-style: none;
+    }
+    &__item {
+        position: relative;
+        margin: 0 0 102px 230px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__photo {
+        position: absolute;
+        top: 0;
+        left: -230px;
+    }
+    &__subtitle {
+        margin: 0;
+        color: #0d0d0d;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    &__runs {
+        color: #646464;
+        font-size: 14px;
+        font-weight: 300;
+    }
+    &__descr {
+        margin: 19px 0 0 0;
+        max-width: 655px;
+        color: #0d0d0d;
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 300;
+    }
+}

@@ -1,0 +1,69 @@
+.advantages {
+    padding: 70px 0 78px 0;
+    background-color: #f6f6f6;
+    
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        margin: 173px 0 0 0;
+        padding: 0;
+        list-style: none;
+    }
+    &__item {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        width: 247px;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 70px;
+            height: 70px;
+            top: -80px;
+            left: 90px;
+            background: url('../img/icons/advantages__cup.png') center (center/cover) no-repeat;
+        }
+    }
+    &__item:nth-child(1)::before {
+        background: url('../img/icons/advantages__cup.png') center (center/cover) no-repeat;
+    }
+    &__item:nth-child(2)::before {
+        background: url('../img/icons/advantages__heart.png') center (center/cover) no-repeat;
+        animation: heartbeat 1.5s ease infinite;
+    }
+    &__item:nth-child(3)::before {
+        background: url('../img/icons/advantages__shoe.png') center (center/cover) no-repeat;
+    }
+    &-item {
+        &__title {
+            margin: 38px 0 0 0;
+            padding: 0;
+            color: #0d0d0d;
+            font-size: 18px;
+            font-weight: 700;
+            text-align: center;
+            // border: 1px solid blue;
+        }   
+        &__descr {
+            margin: 26px 0 0 0;
+            padding: 0;
+            color: #0d0d0d;
+            font-size: 14px;
+            font-weight: 300;
+            text-align: center;
+        }
+        &__link {
+            font-size: 14px;
+            font-weight: 300;
+            color: #ff0000;
+            text-transform: uppercase;
+            &:hover {
+                text-decoration: underline;
+                color: #ff0000;
+            }
+            &:active {
+                opacity: 0.5;
+            }
+        }
+    }
+}
